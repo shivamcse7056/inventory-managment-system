@@ -6,6 +6,7 @@ const generateAccessToken = (id) => {
     expiresIn: '15m',
   });
 };
+console.log("hello ");
 
 const generateRefreshToken = (id) => {
   return jwt.sign({ id }, process.env.JWT_SECRET, {
